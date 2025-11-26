@@ -17,7 +17,7 @@ bat 'docker build -t static-site:67 .'
 
 stage('Run Container') {
 steps {
-bat 'docker run -d -p 5600:80 --sweety static-site:67'
+bat 'docker run -d -p 5600:80 --name sweety static-site:67'
 }
 }
 }
